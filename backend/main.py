@@ -8,13 +8,14 @@ from Searcher import Searcher
 import requests
 import base64
 
+
 from chat_hist import chathistory
 
 global repo_summary
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-ghtoken = "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"
+ghtoken = os.getenv('GITHUB_TOKEN')
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY)
 

@@ -1,7 +1,10 @@
 import base64
 import logging
 logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware  # Import the CORS middleware
 from pydantic import BaseModel
@@ -26,7 +29,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-token = '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'
+token = os.getenv('GITHUB_TOKEN')
 
 def get_repo_structure_comb(repo_url, path=''):
     # Extract the owner and repo name from the URL
