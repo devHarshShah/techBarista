@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import FolderStructure from './folderstructure';
 import { Input, Button } from '@nextui-org/react';
 import ReactMarkdown from 'react-markdown';
+import axios from 'axios';
 
 interface Item {
   name: string;
@@ -92,29 +93,23 @@ const Search = ({ data }: { data: Item[] }) => {
 
   const fetchSummaryAndUpdateChat = async () => {
     let repo = localStorage.getItem('repo-link');
-    const response = await fetch('http://127.0.0.1:8000/ask_code_llm', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/ask_code_llm', {
         url: repo,
-      }),
-    });
+        codeurl: "None",
+        query:""
+      });
 
-    if (!response.ok) {
+      setSummary(response.data[0].response);
+      setLoading(false);
+
+      // Add the summary as the first response in the chat history
+      setChatHistory((prevChatHistory) => [...prevChatHistory, { type: 'response', content: response.data[0].response }]);
+    } catch (error) {
       console.error('Failed to get the summary');
       setSummary('Failed to load summary');
       setLoading(false);
-      return;
     }
-
-    const data = await response.json();
-    setSummary(data[0].response);
-    setLoading(false);
-
-    // Add the summary as the first response in the chat history
-    setChatHistory((prevChatHistory) => [...prevChatHistory, { type: 'response', content: data[0].response }]);
   };
 
   useEffect(() => {

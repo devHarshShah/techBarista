@@ -26,7 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-token = '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'
+token = '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'
 
 def get_repo_structure_comb(repo_url, path=''):
     # Extract the owner and repo name from the URL
@@ -49,14 +49,25 @@ def get_repo_structure_comb(repo_url, path=''):
                 structure['content'].append(item_structure)
             else:
                 # If the item is a file, add it to the structure
-                structure['content'].append({
+                if str(api_url)[-1]=="/":
+                    structure['content'].append({
                     'name': item['name'],
                     'type': 'file',
                     'path': item['path'],
                     'url': item['html_url'],
-                    'api_url': api_url,
-                    'content': base64.b64decode(item['content']).decode('utf-8') if 'content' in item else None
+                    'api_url': api_url+item['name'],
+                    'content': base64.b64decode(item['content']).decode('utf-8') if 'content' in item else "None"
                 })
+                else:
+                    
+                    structure['content'].append({
+                        'name': item['name'],
+                        'type': 'file',
+                        'path': item['path'],
+                        'url': item['html_url'],
+                        'api_url': api_url+"/"+item['name'],
+                        'content': base64.b64decode(item['content']).decode('utf-8') if 'content' in item else "None"
+                    })
         return structure
     else:
         return None

@@ -1,0 +1,514 @@
+{
+    "blob": {
+      "name": "techBarista",
+      "type": "dir",
+      "content": [
+        {
+          "name": ".DS_Store",
+          "type": "file",
+          "path": ".DS_Store",
+          "url": "https://github.com/devHarshShah/techBarista/blob/main/.DS_Store",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+          "content": null
+        },
+        {
+          "name": ".gitignore",
+          "type": "file",
+          "path": ".gitignore",
+          "url": "https://github.com/devHarshShah/techBarista/blob/main/.gitignore",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+          "content": null
+        },
+        {
+          "name": "LLMreq.txt",
+          "type": "file",
+          "path": "LLMreq.txt",
+          "url": "https://github.com/devHarshShah/techBarista/blob/main/LLMreq.txt",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+          "content": null
+        },
+        {
+          "name": "README.md",
+          "type": "file",
+          "path": "README.md",
+          "url": "https://github.com/devHarshShah/techBarista/blob/main/README.md",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+          "content": null
+        },
+        {
+          "name": "backend",
+          "type": "dir",
+          "content": [
+            {
+              "name": ".DS_Store",
+              "type": "file",
+              "path": "backend/.DS_Store",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/.DS_Store",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": ".env",
+              "type": "file",
+              "path": "backend/.env",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/.env",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "GOOGLE GEMINI API KEY.txt",
+              "type": "file",
+              "path": "backend/GOOGLE GEMINI API KEY.txt",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/GOOGLE%20GEMINI%20API%20KEY.txt",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "Searcher.py",
+              "type": "file",
+              "path": "backend/Searcher.py",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/Searcher.py",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "__pycache__",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "Searcher.cpython-311.pyc",
+                  "type": "file",
+                  "path": "backend/__pycache__/Searcher.cpython-311.pyc",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/__pycache__/Searcher.cpython-311.pyc",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend/__pycache__",
+                  "content": null
+                },
+                {
+                  "name": "get_github_content.cpython-311.pyc",
+                  "type": "file",
+                  "path": "backend/__pycache__/get_github_content.cpython-311.pyc",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/__pycache__/get_github_content.cpython-311.pyc",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend/__pycache__",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend/__pycache__",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend/__pycache__"
+            },
+            {
+              "name": "app.log",
+              "type": "file",
+              "path": "backend/app.log",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/app.log",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "app.py",
+              "type": "file",
+              "path": "backend/app.py",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/app.py",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "chat_hist.py",
+              "type": "file",
+              "path": "backend/chat_hist.py",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/chat_hist.py",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "main.py",
+              "type": "file",
+              "path": "backend/main.py",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/main.py",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "mainc.py",
+              "type": "file",
+              "path": "backend/mainc.py",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/mainc.py",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            },
+            {
+              "name": "requirements.txt",
+              "type": "file",
+              "path": "backend/requirements.txt",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/backend/requirements.txt",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+              "content": null
+            }
+          ],
+          "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/backend"
+        },
+        {
+          "name": "frontend",
+          "type": "dir",
+          "content": [
+            {
+              "name": ".eslintrc.json",
+              "type": "file",
+              "path": "frontend/.eslintrc.json",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/.eslintrc.json",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": ".gitignore",
+              "type": "file",
+              "path": "frontend/.gitignore",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/.gitignore",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": ".vscode",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "settings.json",
+                  "type": "file",
+                  "path": "frontend/.vscode/settings.json",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/.vscode/settings.json",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/.vscode",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/.vscode",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/.vscode"
+            },
+            {
+              "name": "LICENSE",
+              "type": "file",
+              "path": "frontend/LICENSE",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/LICENSE",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "README.md",
+              "type": "file",
+              "path": "frontend/README.md",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/README.md",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "app",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "about",
+                  "type": "dir",
+                  "content": [
+                    {
+                      "name": "layout.tsx",
+                      "type": "file",
+                      "path": "frontend/app/about/layout.tsx",
+                      "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/about/layout.tsx",
+                      "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/about",
+                      "content": null
+                    },
+                    {
+                      "name": "page.tsx",
+                      "type": "file",
+                      "path": "frontend/app/about/page.tsx",
+                      "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/about/page.tsx",
+                      "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/about",
+                      "content": null
+                    }
+                  ],
+                  "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/about",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/about"
+                },
+                {
+                  "name": "brew",
+                  "type": "dir",
+                  "content": [
+                    {
+                      "name": "page.tsx",
+                      "type": "file",
+                      "path": "frontend/app/brew/page.tsx",
+                      "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/brew/page.tsx",
+                      "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/brew",
+                      "content": null
+                    }
+                  ],
+                  "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/brew",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/brew"
+                },
+                {
+                  "name": "error.tsx",
+                  "type": "file",
+                  "path": "frontend/app/error.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/error.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app",
+                  "content": null
+                },
+                {
+                  "name": "instant",
+                  "type": "dir",
+                  "content": [
+                    {
+                      "name": "page.tsx",
+                      "type": "file",
+                      "path": "frontend/app/instant/page.tsx",
+                      "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/instant/page.tsx",
+                      "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/instant",
+                      "content": null
+                    }
+                  ],
+                  "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/instant",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app/instant"
+                },
+                {
+                  "name": "layout.tsx",
+                  "type": "file",
+                  "path": "frontend/app/layout.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/layout.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app",
+                  "content": null
+                },
+                {
+                  "name": "page.tsx",
+                  "type": "file",
+                  "path": "frontend/app/page.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/page.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app",
+                  "content": null
+                },
+                {
+                  "name": "providers.tsx",
+                  "type": "file",
+                  "path": "frontend/app/providers.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/app/providers.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/app"
+            },
+            {
+              "name": "components",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "counter.tsx",
+                  "type": "file",
+                  "path": "frontend/components/counter.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/counter.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "folderstructure.tsx",
+                  "type": "file",
+                  "path": "frontend/components/folderstructure.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/folderstructure.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "icons.tsx",
+                  "type": "file",
+                  "path": "frontend/components/icons.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/icons.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "navbar.tsx",
+                  "type": "file",
+                  "path": "frontend/components/navbar.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/navbar.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "primitives.ts",
+                  "type": "file",
+                  "path": "frontend/components/primitives.ts",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/primitives.ts",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "search.tsx",
+                  "type": "file",
+                  "path": "frontend/components/search.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/search.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                },
+                {
+                  "name": "theme-switch.tsx",
+                  "type": "file",
+                  "path": "frontend/components/theme-switch.tsx",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/components/theme-switch.tsx",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/components"
+            },
+            {
+              "name": "config",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "fonts.ts",
+                  "type": "file",
+                  "path": "frontend/config/fonts.ts",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/config/fonts.ts",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/config",
+                  "content": null
+                },
+                {
+                  "name": "site.ts",
+                  "type": "file",
+                  "path": "frontend/config/site.ts",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/config/site.ts",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/config",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/config",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/config"
+            },
+            {
+              "name": "next.config.js",
+              "type": "file",
+              "path": "frontend/next.config.js",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/next.config.js",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "package-lock.json",
+              "type": "file",
+              "path": "frontend/package-lock.json",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/package-lock.json",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "package.json",
+              "type": "file",
+              "path": "frontend/package.json",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/package.json",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "postcss.config.js",
+              "type": "file",
+              "path": "frontend/postcss.config.js",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/postcss.config.js",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "public",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "favicon.ico",
+                  "type": "file",
+                  "path": "frontend/public/favicon.ico",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/public/favicon.ico",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/public",
+                  "content": null
+                },
+                {
+                  "name": "next.svg",
+                  "type": "file",
+                  "path": "frontend/public/next.svg",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/public/next.svg",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/public",
+                  "content": null
+                },
+                {
+                  "name": "vercel.svg",
+                  "type": "file",
+                  "path": "frontend/public/vercel.svg",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/public/vercel.svg",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/public",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/public",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/public"
+            },
+            {
+              "name": "styles",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "globals.css",
+                  "type": "file",
+                  "path": "frontend/styles/globals.css",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/styles/globals.css",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/styles",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/styles",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/styles"
+            },
+            {
+              "name": "tailwind.config.js",
+              "type": "file",
+              "path": "frontend/tailwind.config.js",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/tailwind.config.js",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "tsconfig.json",
+              "type": "file",
+              "path": "frontend/tsconfig.json",
+              "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/tsconfig.json",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+              "content": null
+            },
+            {
+              "name": "types",
+              "type": "dir",
+              "content": [
+                {
+                  "name": "index.ts",
+                  "type": "file",
+                  "path": "frontend/types/index.ts",
+                  "url": "https://github.com/devHarshShah/techBarista/blob/main/frontend/types/index.ts",
+                  "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/types",
+                  "content": null
+                }
+              ],
+              "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/types",
+              "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend/types"
+            }
+          ],
+          "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/frontend"
+        },
+        {
+          "name": "requirements.txt",
+          "type": "file",
+          "path": "requirements.txt",
+          "url": "https://github.com/devHarshShah/techBarista/blob/main/requirements.txt",
+          "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+          "content": null
+        }
+      ],
+      "url": "https://api.github.com/repos/devHarshShah/techBarista/contents/",
+      "api_url": "https://api.github.com/repos/devHarshShah/techBarista/contents/"
+    }
+  }

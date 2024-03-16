@@ -14,9 +14,27 @@ global repo_summary
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-ghtoken = "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"
+ghtoken = "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"
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY)
+
+def get_github_file_content(url:str, token:str):
+    headers = {'Authorization': f'token {token}'}
+    response = requests.get(url, headers=headers)
+    response_json = response.json()
+
+    if 'content' in response_json:
+        content_base64 = response_json['content']
+        try:
+            content = base64.b64decode(content_base64).decode('utf-8')
+        except UnicodeDecodeError:
+            print(f"Cannot decode file as text.")
+            content = None
+        return content
+    elif 'message' in response_json:
+        return response_json['message']
+    else:
+        return "Error: Unexpected response"
 
 def create_search_qns(question, context):
 
@@ -47,10 +65,10 @@ Now, let's generate questions for the given question: {question} and the given c
     return search_qns
 
 
-prompt = PromptTemplate.from_template("""As an AI chatbot, your role is to assist users in understanding code files. You will receive four inputs: 
-1) 'context': a code file 
-2) 'question': a user's query about the code 
-3) 'conversation history': the ongoing dialogue 
+prompt = PromptTemplate.from_template("""As an AI chatbot, your role is to assist users in understanding code files. You will receive four inputs:
+1) 'context': a code file
+2) 'question': a user's query about the code
+3) 'conversation history': the ongoing dialogue
 4) 'search results': the results from a web search of the 'question' related to 'context'.
 
 Your responses should be factual, professional, and friendly, strictly based on the provided code file. Your goal is to help users effectively understand and utilize the code.
@@ -73,19 +91,18 @@ async def summarize_repo(api_response:dict, token):
     def process_items(items, file_info):
         for item in items:
             if item['type'] == 'file':
-                file_info[item['url']] = item['path']
+                file_info[item['api_url']] = item['path']
             elif item['type'] == 'dir':
                 process_items(item['content'], file_info)
 
     file_info = {}
     process_items(api_response['blob']['content'], file_info)
 
-    
-    summarize_file_prompt = PromptTemplate.from_template("""As an AI chatbot, your role is to assist users in understanding code files. You will receive one input, 'context', which represents a code file in a Git repository. 
+    summarize_file_prompt = PromptTemplate.from_template("""As an AI chatbot, your role is to assist users in understanding code files. You will receive one input, 'context', which represents a code file in a Git repository.
 
-Your task is to summarize the code file. You are expected to provide a concise summary, ideally under 150 words. However, if the file is extensive, the summary can extend up to 250 words.
+Your task is to summarize the code file. You are expected to provide a concise summary, ideally under 50 words. However, if the file is extensive, the summary can extend up to 250 words.
 
-Your summary should include the file's purpose, functionality, and any other pertinent details. 
+Your summary should include the file's purpose, functionality, and any other pertinent details.
 
 Please note:
 - The output should be a string.
@@ -133,10 +150,9 @@ def summarize_dir(api_response_dir:dict, token):
     file_info = {}
     process_items(api_response_dir['blob']['content'], file_info)
 
-    
     summarize_file_prompt = PromptTemplate.from_template("""As an AI chatbot, your role is to assist users in understanding code files. You will receive one input, 'context', which represents a code file in a Git repository.
 
-Your task is to summarize the code file. Aim to keep your summary under 100 words. Your summary should include the file's purpose, functionality, and any other pertinent details.
+Your task is to summarize the code file. Aim to keep your summary under 150 words. Your summary should include the file's purpose, functionality, and any other pertinent details.
 
 Please note:
 - The output should be a string.
@@ -175,25 +191,10 @@ chain = prompt | llm | StrOutputParser()
 
 searcher = Searcher()
 
-def get_github_file_content(url:str, token:str):
-    headers = {'Authorization': f'token {token}'}
-    response = requests.get(url, headers=headers)
-    response_json = response.json()
-
-    if 'content' in response_json:
-        content_base64 = response_json['content']
-        content = base64.b64decode(content_base64).decode('utf-8')
-        return content
-    elif 'message' in response_json:
-        return response_json['message']
-    else:
-        return "Error: Unexpected response"
-
-
 async def main(question:str, codeurl="None") -> str:
     if question == "exit":
         return "Goodbye"
-        
+
     gitfile = get_github_file_content(codeurl, ghtoken)
     searchquestions = create_search_qns(question, gitfile)
     searchresults = {}
@@ -202,7 +203,7 @@ async def main(question:str, codeurl="None") -> str:
 
     if codeurl=="None":
         response = chain.invoke({"question": question, "context": "", "chathistory": chathistory[:10], "searchresults": searchresults, "repo_summary": repo_summary})
-    else:  
+    else:
       response = chain.invoke({"question": question, "context":gitfile, "chathistory": chathistory[:10], "searchresults": searchresults, "repo_summary": repo_summary})
 
     chathistory.append((f"Human: {question}", f"AI: {response}", f"Search Results: {searchresults}"))
